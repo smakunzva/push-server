@@ -1,0 +1,23 @@
+{
+  "name": "push_server",
+  "version": "1.0.0",
+  "description": "Push server",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js",
+    "vapid": "node_modules/web-push/src/cli.js generate-vapid-keys --json > server/vapid.json"
+  },
+  "keywords": [
+    "pwa",
+    "push",
+    "server"
+  ],
+  "author": "Steven K Makunzva",
+  "license": "ISC",
+  "dependencies": {
+    "node-storage": "0.0.7",
+    "urlsafe-base64": "^1.0.0",
+    "web-push": "^3.3.3"
+  }
+}

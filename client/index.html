@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <style media="screen">
+    body {
+      font-family: 'Lato', sans-serif;
+      padding: 0 1rem;
+      text-align: center
+    }
+    button {
+      font-size: 2rem;
+      padding: 0.5rem 3rem;
+      background: #66DE93;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    #unsubscribe button {
+      background: rgb(222, 102, 112)
+    }
+    .hidden {
+      display: none
+    }
+  </style>
+  <body>
+    <h1>Push notifications</h1><hr>
+    <div id="subscribe">
+      <p><i>Please subscribe to receive push notifications</i></p>
+      <button onclick="subscribeClicked()">Subscribe</button>
+    </div>
+    <div id="unsubscribe" class="hidden">
+      <p><i>Unsubscribe from pushnotification</i></p>
+      <button onclick="unSubscribed()">Unsubscribe</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
